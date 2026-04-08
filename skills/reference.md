@@ -88,9 +88,25 @@
 | ICC World Test Championship | Test | 2-year cycle |
 | ICC Champions Trophy | ODI | Every 4 years |
 
-## Common Search Patterns for ESPN Cricinfo
+## Common Search Patterns
 
+### ESPN Cricinfo
 - Player profile: `espncricinfo.com/player/[player-name]-[id]`
 - Statsguru queries: `stats.espncricinfo.com/ci/engine/stats/`
 - Match scorecards: `espncricinfo.com/series/[series]/[match]`
+
+### ICC
 - Rankings: `icc-cricket.com/rankings/`
+
+### Wikipedia
+- Player page: `en.wikipedia.org/wiki/[Player_Name]`
+- Team page: `en.wikipedia.org/wiki/[Country]_national_cricket_team`
+
+### Cricbuzz
+- Player profile: `cricbuzz.com/profiles/[id]/[player-name]`
+- Live scores: `cricbuzz.com/cricket-match/live-scores`
+- Series: `cricbuzz.com/cricket-series/`
+
+### Wisden
+- Player profiles: `wisden.com/players/[player-name]`
+- Records: `wisden.com/records/`
