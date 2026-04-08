@@ -1,0 +1,8 @@
+{
+  "name": "CricStat",
+  "description": "Cricket statistics lookup skill for Claude Code. Ask about any cricket stats — player averages, match results, records, rankings, head-to-head data — and get accurate, well-formatted answers from trusted sources like ESPN Cricinfo and ICC.",
+  "version": "1.0.0",
+  "author": "hamza",
+  "license": "MIT",
+  "skills": "./"
+}
