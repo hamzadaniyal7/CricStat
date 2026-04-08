@@ -24,12 +24,19 @@ The user is asking about: **$ARGUMENTS**
 
 2. **Search for the data**: Use `WebSearch` to find the relevant cricket statistics. Use targeted queries like:
    - `"[player name] [format] [stat] cricket stats site:espncricinfo.com"` for player stats
+   - `"[player name] cricketer site:en.wikipedia.org"` for player biography and background
+   - `"[team name] cricket team site:en.wikipedia.org"` for team history and background
    - `"[tournament/series name] [year] results cricket"` for match results
    - `"ICC [format] rankings [year]"` for rankings
    - `"cricket records [category] [format]"` for records
    - `"[team] vs [team] [format] head to head"` for head-to-head stats
+   - `"[player/team] cricket news site:cricbuzz.com"` for latest news
 
-3. **Fetch detailed data if needed**: If search results are not sufficient, use `WebFetch` on ESPN Cricinfo, ICC, or other reliable cricket sources to get detailed stats pages.
+3. **Fetch player/team Wikipedia pages**: When a specific player or team is mentioned, also fetch their Wikipedia page to enrich the response with:
+   - Player: full name, date of birth, playing role, teams played for, career highlights, awards, records held
+   - Team: history, notable achievements, current captain/coach, ICC rankings context
+
+4. **Fetch detailed data if needed**: If search results are not sufficient, use `WebFetch` on ESPN Cricinfo, Cricbuzz, ICC, or other reliable cricket sources to get detailed stats pages.
 
 4. **Present the data clearly**: Format the response as:
    - Use tables for comparative data (e.g., player career stats, rankings)
@@ -40,13 +47,39 @@ The user is asking about: **$ARGUMENTS**
 
 ## Trusted Sources (in order of preference)
 
+### Primary Stats & Data
 1. **ESPN Cricinfo** (espncricinfo.com) — most comprehensive cricket database
 2. **ICC Official** (icc-cricket.com) — official rankings and records
 3. **Howstat** (howstat.com) — detailed historical stats
 4. **Cricket Archive** (cricketarchive.com) — historical records
-5. **IPL Official** (iplt20.com) — IPL-specific stats
-6. **PCB Official** (pcb.com.pk) — Pakistan cricket stats
-7. **BCCI Official** (bcci.tv) — India cricket stats
+
+### Wikipedia (for player/team background)
+5. **Wikipedia** (en.wikipedia.org) — use for player biographies, career summaries, team history, and contextual information. When a specific player or team is mentioned, fetch their Wikipedia page to provide background (early life, career milestones, awards, controversies, captaincy record, etc.)
+
+### League & Board Official Sites
+6. **IPL Official** (iplt20.com) — IPL-specific stats
+7. **PSL Official** (pcb.com.pk/psl) — PSL stats and schedules
+8. **BBL Official** (cricket.com.au/big-bash) — Big Bash League stats
+9. **CPL Official** (cplt20.com) — Caribbean Premier League stats
+10. **SA20 Official** (sa20.co.za) — SA20 league stats
+11. **The Hundred** (thehundred.com) — The Hundred stats
+12. **MLC Official** (majorleaguecricket.com) — Major League Cricket stats
+
+### Cricket Boards
+13. **BCCI Official** (bcci.tv) — India cricket
+14. **PCB Official** (pcb.com.pk) — Pakistan cricket
+15. **Cricket Australia** (cricket.com.au) — Australia cricket
+16. **ECB** (ecb.co.uk) — England & Wales cricket
+17. **Cricket South Africa** (cricket.co.za) — South Africa cricket
+18. **New Zealand Cricket** (nzc.nz) — New Zealand cricket
+19. **Sri Lanka Cricket** (srilankacricket.lk) — Sri Lanka cricket
+20. **BCB** (tigercricket.com.bd) — Bangladesh cricket
+
+### News & Analysis
+21. **Cricbuzz** (cricbuzz.com) — live scores, news, and analysis
+22. **CricTracker** (crictracker.com) — news, stats, and fantasy tips
+23. **Wisden** (wisden.com) — historic and editorial cricket coverage
+24. **Cricket Monthly** (thecricketmonthly.com) — long-form cricket journalism
 
 ## Response Format
 
